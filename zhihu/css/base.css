@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .w {
-    width: 1000px;
+    width: 1048px;
     margin: 0 auto;
 }
 .fl {
@@ -29,6 +29,7 @@ button {
 }
 a {
     text-decoration: none;
+    color: #121212;
 }
 button,
 input {
