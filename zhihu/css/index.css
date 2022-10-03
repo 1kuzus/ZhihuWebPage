@@ -91,6 +91,56 @@
     background: url(../images/avatar.jpg) no-repeat center;
     background-size: 30px;
     border-radius: 2px;
+    cursor: pointer;
+}
+#menubox {
+    display: none;
+    position: relative;
+    width: 1048px;
+    margin: 0 auto;
+}
+#menubox .menu {
+    position: absolute;
+    right: -7%;
+    width: 118px;
+    height: 160px;
+    margin-top: 16px;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 24px rgba(18,18,18,0.1);
+    transition: all 1s;
+}
+#menubox .tri {
+    position: absolute;
+    right: -2.6%;
+    margin-top: -0.9%;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-bottom-color: #ffffff;
+}
+#menubox .menu ul li {
+    height: 36px;
+    line-height: 36px;
+}
+#menubox .menu ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    padding: 0 20px;
+    color: #8590a6;
+    font-size: 14px;
+}
+#menubox .menu ul li a:hover {
+    background: #f6f6f6;
+}
+#menubox .menu ul li a img {
+    width: 16px;
+    margin-bottom: 2px;
+}
+#menubox .menu ul li a img:nth-child(n) {
+    width: 14px;
 }
 .main {
     margin-top: 10px;
