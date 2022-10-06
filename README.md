@@ -30,6 +30,7 @@
 1.做圆形盒子可以把宽高设为一样长，然后`border-radius: 50%;`  
 2.可以通过`input::-webkit-input-placeholder`设置占位符的样式  
 3.有定位的盒子水平居中，在`left: 50%;`后可以用`transform: translateX(-50%);`来调整位置，比把`margin-left`设为负半宽度更灵活些
+<br>
 
 >还没来得及做的...
 
