@@ -5,7 +5,6 @@ body {
     position: relative;
     background: #b8e5f8 url(../images/bg.png) no-repeat center top;
     background-size: 100%;
-    min-height: 100%;
 }
 .centerbox {
     position: absolute;
@@ -15,7 +14,6 @@ body {
     left: 50%;
     margin-left: -366px;
     margin-top: -379px;
-    /*min-height: 100%;*/
 }
 .logo_register {
     width: 128px;
@@ -149,6 +147,12 @@ body {
 }
 .tel input {
     width: 100%;
+}
+.vc input {
+    width: 250px;
+}
+.pwd input {
+    width: 300px;
 }
 .common_content .opt {
     margin-top: 12px;
