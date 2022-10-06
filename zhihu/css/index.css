@@ -1,50 +1,100 @@
 .header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
     height: 52px;
     background: #ffffff;
     box-shadow: 0 1px 3px rgba(18,18,18,0.1);
+    overflow: hidden;
 }
-.inner {
+.inner,
+.inner-onscroll {
     width: 1245px;
     height: 52px;
-    margin: 0 auto;
-    padding-right: 73px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.inner .logo {
+.inner {
+    padding-right: 73px;
+    margin-top: 0;
+}
+.inner-onscroll {
+    padding-left: 15px;
+    padding-right: 30px;
+}
+.header .logo {
     margin-right: 8px;
     width: 100px;
     height: 49px;
     background: url(../images/logo.svg) no-repeat center;
     background-size: auto 30px;
 }
-.inner .nav_item ul li {
+.header .nav_item ul li {
     float: left;
 }
-.inner .nav_item ul li a {
+.header .nav_item ul li a {
     display: inline-block;
     height: 52px;
     line-height: 52px;
-    margin: 0 15px;
-    font-size: 15px;
+}
+.inner .nav_item ul li a {
     color: #8590a6;
+    font-size: 15px;
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+.inner .nav_item ul li a:hover {
+    color: #121212;
+}
+.inner-onscroll .nav_item ul li a {
+    color: #121212;
+    font-size: 16px;
+    margin: 0 22px;
 }
 .inner .nav_item ul li:first-child a {
     color: #121212;
     font-weight: 700;
     border-bottom: 4px solid #056de8;
 }
+.inner-onscroll .nav_item ul li a:hover {
+    color: #175199;
+}
+.inner-onscroll .nav_item ul li:nth-child(2) a {
+    color: #056de8;
+}
 .search {
     position: relative;
-    width: 550px;
     height: 52px;
     padding: 9px 0 0 50px;
 }
 .search input {
-    width: 400px;
     height: 34px;
     padding-left: 15px;
     border: 1px solid #ededed;
     border-radius: 17px;
     background-color: #f6f6f6;
+}
+.inner .search {
+    width: 550px;
+}
+.inner .search input {
+    width: 400px;
+}
+.inner-onscroll .search {
+    width: 450px;
+}
+.inner-onscroll .search input {
+    width: 300px;
+}
+.search input::-webkit-input-placeholder {
+    color: #8590a6;
+}
+.search input::-ms-input-placeholder {
+    color: #8590a6;
+}
+.search input::-moz-placeholder {
+    color: #8590a6;
 }
 .search .search_icon {
     position: absolute;
@@ -143,7 +193,7 @@
     width: 14px;
 }
 .main {
-    margin-top: 10px;
+    margin-top: 62px;
     padding: 0 30px 0 18px;
 }
 .content {
