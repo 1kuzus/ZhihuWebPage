@@ -30,25 +30,25 @@ function EaseSwitchTab(mtDes,callback)//平滑切换tab栏
         }
         else
         {
-            var step=(mtDes-mt)/25
+            var step=(mtDes-mt)/30
             step=step>0?Math.ceil(step):Math.floor(step)
             inner.style.marginTop=mt+step+'px'
         }
     },3)
 }
-var flag=true
+var timerFlag=true
 document.onscroll=function()
 {
-    if(flag)
+    if(timerFlag)
     {
-        flag=false
+        timerFlag=false
         if(window.scrollY>=70)
         {
-            EaseSwitchTab(-52,function(){flag=true})
+            EaseSwitchTab(-52,function(){timerFlag=true})
         }
         else
         {
-            EaseSwitchTab(0,function(){flag=true})
+            EaseSwitchTab(0,function(){timerFlag=true})
         }
     }
 }
