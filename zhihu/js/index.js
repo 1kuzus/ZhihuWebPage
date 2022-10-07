@@ -1,10 +1,10 @@
 //点击头像下拉菜单
 var avatar=document.querySelector('.inner .avatar')
 var menubox=document.getElementById('menubox')
-flag=0
+var showMenubox=0
 avatar.onclick=function()
 {
-    if(flag===0)
+    if(showMenubox===0)
     {
         menubox.style.display='block'
     }
@@ -12,7 +12,7 @@ avatar.onclick=function()
     {
         menubox.style.display='none'
     }
-    flag=1-flag
+    showMenubox=1-showMenubox
 }
 
 //滚动切换tab栏
@@ -51,4 +51,27 @@ document.onscroll=function()
             EaseSwitchTab(0,function(){timerFlag=true})
         }
     }
+}
+
+//收藏
+var favourBtn=document.querySelectorAll('.content .floor .functions .fav')
+var closeBtn=document.querySelector('.mask img')
+var favour=document.querySelector('.mask .favour')
+var mask=document.querySelector('.mask')
+for(var i=0;i<favourBtn.length;i++)
+{
+    favourBtn[i].onclick=function()
+    {
+        favour.style.top='50%'
+        closeBtn.style.top='50%'
+        mask.style.opacity='1'
+        mask.style.zIndex='10'
+    }
+}
+closeBtn.onclick=function()
+{
+    favour.style.top='54%'
+    closeBtn.style.top='54%'
+    mask.style.opacity='0'
+    setTimeout(function(){mask.style.zIndex='-1'},400)
 }

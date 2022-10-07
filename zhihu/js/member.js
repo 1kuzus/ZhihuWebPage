@@ -43,7 +43,7 @@ focus.onmouseleave=function()
     larr.style.opacity='0'
     rarr.style.opacity='0'
     clearInterval(autoPlayTimer)
-    autoPlayTimer=setInterval(function(){rarr.click()},2000)
+    autoPlayTimer=setInterval(function(){rarr.click()},2400)
 }
 
 //根据pics(ul)中图片数量向dots(ol)中添加圆点
@@ -112,4 +112,4 @@ rarr.onclick=function()
 }
 
 //自动播放，相当于手动触发右箭头点击事件
-var autoPlayTimer=setInterval(function(){rarr.click()},2000)
+var autoPlayTimer=setInterval(function(){rarr.click()},2400)
