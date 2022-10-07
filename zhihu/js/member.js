@@ -5,7 +5,6 @@ var larr=document.querySelector('.larr')//左箭头
 var rarr=document.querySelector('.rarr')//右箭头
 var pics=focus.querySelector('ul')
 var dots=focus.querySelector('ol')
-var picWidth=focus.offsetWidth
 var colors=['#e7d9b5','#737fa9','#725c58','#3c5b8A','#216865','#dfccb7']
 
 //缓动函数
@@ -56,7 +55,7 @@ for(var i=0;i<pics.children.length;i++)
         //点击圆点切换背景图、更改背景颜色
         curPicId=this.getAttribute('index')
         bkg.style.backgroundColor=colors[curPicId]
-        ease(pics,-curPicId*picWidth)
+        ease(pics,-curPicId*focus.offsetWidth)
         //设置当前圆点高亮
         for(var i=0;i<dots.children.length;i++)
         {
@@ -76,7 +75,7 @@ larr.onclick=function()
     if(curPicId===0)//当前已经是最后一张图片(克隆后的第一张)时先循环还原
     {
         curPicId=pics.children.length-1
-        pics.style.left=-curPicId*picWidth+'px'
+        pics.style.left=-curPicId*focus.offsetWidth+'px'
     }
     curPicId--
     //设置当前圆点
@@ -88,7 +87,7 @@ larr.onclick=function()
     //更改背景颜色
     bkg.style.backgroundColor=colors[curPicId%dots.children.length]
     //移动轮播图
-    ease(pics,-curPicId*picWidth)
+    ease(pics,-curPicId*focus.offsetWidth)
 }
 rarr.onclick=function()
 {
@@ -108,8 +107,19 @@ rarr.onclick=function()
     //更改背景颜色
     bkg.style.backgroundColor=colors[curPicId%dots.children.length]
     //移动轮播图
-    ease(pics,-curPicId*picWidth)
+    ease(pics,-curPicId*focus.offsetWidth)
 }
 
 //自动播放，相当于手动触发右箭头点击事件
 var autoPlayTimer=setInterval(function(){rarr.click()},2400)
+
+//动态加载轮播图模块高度
+ease(pics,-curPicId*focus.offsetWidth)
+focus.style.height=focus.offsetWidth*500/1920+'px'
+bkg.style.height=focus.offsetWidth*500/1920+52+'px'
+window.onresize=function()
+{
+    ease(pics,-curPicId*focus.offsetWidth)
+    focus.style.height=focus.offsetWidth*500/1920+'px'
+    bkg.style.height=focus.offsetWidth*500/1920+52+'px'
+}
