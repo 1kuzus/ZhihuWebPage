@@ -1,0 +1,243 @@
+html,body {
+    height: 100%;
+}
+body {
+    position: relative;
+    background: #b8e5f8 url(../images/bg.png) no-repeat center top;
+    background-size: 100%;
+}
+.centerbox {
+    position: absolute;
+    width: 732px;
+    height: 612px;
+    top: 50%;
+    left: 50%;
+    margin-left: -366px;
+    margin-top: -379px;
+}
+.logo_register {
+    width: 128px;
+    height: 51px;
+    margin: 0 auto;
+}
+.logo_register img {
+    width: 100%;
+}
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 732px;
+    height: 507px;
+    background-color: #ffffff;
+}
+.content .left {
+    position: absolute;
+    left: 0;
+    width: 332px;
+    height: 100%;
+    padding-top: 98px;
+}
+.content .left h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+    text-align: center;
+}
+.content .left h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+    text-align: center;
+}
+.content .left p {
+    font-size: 14px;
+    color: #444444;
+    text-align: center;
+    margin: 8px 0 28px 0;
+}
+.content .left .qr {
+    width: 138px;
+    height: 138px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto 30px auto;
+    padding: 7px;
+}
+.content .left .qr img {
+    width: 122px;
+}
+.content .left .more {
+    padding-left: 28px;
+}
+.content .left .more ul {
+    position: absolute;
+    bottom: 36px;
+}
+.content .left .more ul li {
+    float: left;
+    height: 30px;
+    padding: 0 10px;
+    margin-right: 8px;
+    border-radius: 15px;
+    border: 1px solid #ebebeb;
+}
+.content .left .more ul li:hover {
+    background-color: #f6f6f6;
+}
+.content .left .more ul li a {
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #444444;
+}
+.content .right {
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    border-left: 1px solid #ebebeb;
+}
+.content .right .common {
+    width: 400px;
+    padding: 0 24px 30px 24px;
+}
+.content .right .common .nav {
+    width: 100%;
+    height: 49px;
+    margin-top: 16px;
+}
+.content .right .common .nav .nav_item {
+    height: 49px;
+    line-height: 49px;
+    margin-right: 24px;
+    font-size: 16px;
+    color: #444444;
+    cursor: pointer;
+}
+.nav_item_hightlight {
+    color: #121212;
+    font-weight: 700;
+    border-bottom: 3px solid #056de8;
+}
+.common_content .tel,
+.common_content .pwd,
+.common_content .vc {
+    border-bottom: 1px solid #ebebeb;
+}
+.common_content .tel {
+    margin-top: 24px;
+}
+.common_content .pwd,
+.common_content .vc {
+    margin-top: 10px;
+}
+#eye {
+    float: right;
+    width: 24px;
+    margin-top: 12px;
+}
+.common_content .vc a {
+    font-size: 14px;
+    color: #056de8;
+    line-height: 45px;
+}
+.common_content input {
+    height: 45px;
+}
+.tel input {
+    width: 100%;
+}
+.vc input {
+    width: 250px;
+}
+.pwd input {
+    width: 300px;
+}
+.common_content .opt {
+    margin-top: 12px;
+}
+.common_content .opt a {
+    font-size: 14px;
+}
+.common_content .opt .a1 {
+    float: left;
+    color: #056de8;
+}
+.common_content .opt .a2 {
+    float: right;
+    color: #444444;
+}
+.common_content button {
+    width: 100%;
+    height: 36px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #056de8;
+    color: #ffffff;
+    font-size: 14px;
+}
+.common_content button:hover {
+    background-color: #0461cf;
+}
+.others .tip {
+    width: 352px;
+    height: 17px;
+    margin: 0 24px 12px 24px;
+}
+.others .line {
+    width: 124px;
+    height: 1px;
+    background-color: #ebebeb;
+    margin-top: 8px;
+}
+.others .text {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 17px;
+}
+.others .social {
+    margin: 24px auto 12px;
+    width: 204px;
+    height: 36px;
+}
+.others .social ul li {
+    float: left;
+}
+.others .social ul li:nth-child(-n+2) {
+    margin-right: 48px;
+}
+.others .social ul li a .circ {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #f6f6f6;
+}
+.others .social ul li a .circ img {
+    width: 20px;
+    margin: 8px;
+}
+.others p {
+    width: 400px;
+    height: 80px;
+    padding: 12px 24px 30px 24px;
+    font-size: 12px;
+    color: #999999;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.footer p {
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    margin: 2px 0;
+}
+.footer img {
+    display: block;
+    width: 80px;
+    margin: 20px auto;
+}
