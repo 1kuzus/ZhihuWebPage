@@ -4,14 +4,6 @@
     height: 52px;
     z-index: 2;
 }
-.shadow {
-    position: absolute;
-    width: 100%;
-    min-width: 1920px;
-    height: 200px;
-    z-index: 1;
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0));
-}
 .inner {
     width: 1150px;
     height: 52px;
@@ -91,21 +83,29 @@
     border-radius: 2px;
     cursor: pointer;
 }
+.shadow {
+    position: absolute;
+    width: 100%;
+    min-width: 1280px;
+    height: 200px;
+    z-index: 1;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
 .background {
     position: relative;
     background: #e7d9b5;
     width: 100%;
-    min-width: 1920px;
-    height: 552px;
+    min-width: 1280px;
     padding-top: 52px;
     transition: all 0.3s;
 }
 .focus {
     position: absolute;
     left: 50%;
-    margin-left: -960px;
-    width: 1920px;
-    height: 500px;
+    bottom: 0;
+    width: 100%;
+    max-width: 1920px;
+    transform: translateX(-50%);
     overflow: hidden;
 }
 .focus ul {
@@ -116,17 +116,22 @@
 }
 .focus ul li {
     float: left;
+    width: 10%;
+}
+.focus ul li a {
+    display: block;
 }
 .focus ul li a img {
-    width: 1920px;
-    height: 500px;
+    display: block;
+    width: 100%;
 }
 .larr,
 .rarr {
     opacity: 0;
     position: absolute;
     top: 50%;
-    margin-top: -15px;
+    left: 50%;
+    transform: translateY(-50%);
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -140,11 +145,11 @@
     cursor: pointer;
 }
 .larr {
-    left: 347px;
+    transform: translateX(calc(-50% - 600px));
     padding: 3px 4px 3px 2px;
 }
 .rarr {
-    right: 347px;
+    transform: translateX(calc(-50% + 600px));
     padding: 3px 2px 3px 4px;
 }
 .larr img {
@@ -170,8 +175,9 @@
 }
 .info {
     position: absolute;
-    right: 400px;
-    bottom: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 420px),-50%);
     width: 280px;
     height: 265px;
     background-color: #ffffff;
