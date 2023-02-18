@@ -42,6 +42,7 @@
 .search input {
     width: 400px;
     height: 34px;
+    color: #ffffff;
     padding-left: 15px;
     border-radius: 17px;
     background-color: rgba(255,255,255,0.12);
