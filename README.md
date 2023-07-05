@@ -55,7 +55,7 @@
 
 >部分效果
 
-![image](https://github.com/1kuzus/ZhihuWebPage/blob/main/img/1.gif)
+![image](https://github.com/1kuzus/ZhihuWebPage/blob/main/img/1.png)
 
 <br>
 
