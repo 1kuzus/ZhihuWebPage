@@ -51,6 +51,9 @@
 热榜部分拖动调整顺序  
 写文章页面  
 
+
+![image](https://github.com/1kuzus/ZhihuWebPage/blob/main/img/1.gif)
+
 <br>
 
 **1kuzus**
